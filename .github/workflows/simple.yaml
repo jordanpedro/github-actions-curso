@@ -1,12 +1,11 @@
 name: Shell Commands
-run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
   meu-job:
     runs-on: ubuntu-latest
     steps: 
       - name: ecoando frase
-        run: echo "salve comunidade"
+        run: ec1ho "salve comunidade"
       - name: multiline scripts
         run: |
           node -v
