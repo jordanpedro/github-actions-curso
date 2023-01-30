@@ -1,4 +1,5 @@
 name: Shell Commands
+run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
   meu-job:
