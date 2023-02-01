@@ -17,6 +17,7 @@ jobs:
         shell: python
   meu-job-windows:
     runs-on: windows-latest
+    needs: ['meu-job']
     steps:
       - name: Directory powershell
         run: Get-Location
