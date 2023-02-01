@@ -5,8 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: ecoando frase
-        run: ec1ho "salve comunidade"
+        run: echo "salve comunidade"
       - name: multiline scripts
         run: |
           node -v
           npm -v 
+      - name: python command
+        run: |
+          import platform 
+          print(platform.processor())
+        shell: ptyhon
