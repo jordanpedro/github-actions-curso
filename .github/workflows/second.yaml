@@ -4,12 +4,12 @@ jobs:
   run-githubaction:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout-meu-step 
+        uses: actions/checkout@v1
       - name: comandim pus falado
         run: |
           pwd
-          ls
-      - name: checkout-meu-step 
-        uses: actions/checkout@v1
+          ls -a
       - name: Simple JS ACtion
         uses: actions/hello-world-javascript-action@v1.1
         with:
