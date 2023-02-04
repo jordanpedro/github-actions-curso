@@ -1,5 +1,5 @@
 name: Ãctions workflows
-on: [push]
+on: [pull_request]
 jobs:
   run-githubaction:
     runs-on: ubuntu-latest
