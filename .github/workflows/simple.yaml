@@ -1,8 +1,5 @@
 name: Shell Commands
-on:
-  push:
-  pull_request:
-    types: [closed,assigned,opened,reopened] 
+on: [push]
 jobs:
   meu-job:
     runs-on: ubuntu-latest
