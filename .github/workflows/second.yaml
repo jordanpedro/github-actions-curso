@@ -1,6 +1,7 @@
 name: Ãctions workflows
 on:
-  repository_dispatch: [build] 
+  repository_dispatch: 
+    types: [build] 
   pull_request:
     types: [opened]   
 jobs:
