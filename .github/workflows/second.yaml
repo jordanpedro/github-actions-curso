@@ -1,6 +1,8 @@
 name: Ãctions workflows
-on: [pull_request]
-jobs:
+on:
+  repository_dispatch: 
+    types: [build] 
+jobs: 
   run-githubaction:
     runs-on: ubuntu-latest
     steps:
