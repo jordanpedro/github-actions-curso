@@ -2,8 +2,6 @@ name: Ãctions workflows
 on:
   repository_dispatch: 
     types: [build] 
-  pull_request:
-    types: [opened]   
 jobs:
   run-githubaction:
     runs-on: ubuntu-latest
