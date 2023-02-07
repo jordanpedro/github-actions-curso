@@ -6,6 +6,8 @@ jobs:
   run-githubaction:
     runs-on: ubuntu-latest
     steps:
+      - name: pritando payload
+        run: echo ${{github.event.client_payload.env}}
       - name: checkout-meu-step 
         uses: actions/checkout@v1
       - name: comandim pus falado
