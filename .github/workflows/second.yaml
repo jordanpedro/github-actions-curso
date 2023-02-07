@@ -2,7 +2,7 @@ name: Ãctions workflows
 on:
   repository_dispatch: 
     types: [build] 
-jobs:
+jobs: 
   run-githubaction:
     runs-on: ubuntu-latest
     steps:
