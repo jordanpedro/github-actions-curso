@@ -1,27 +1,13 @@
-name: Ãctions workflows
+name: Trigger Action on a CRON Schedule
+
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Runs "At 11:00 on every day-of-week from Monday through Friday"
+    - cron: '*/5 * * * *'
+    
 jobs:
-  run-githubaction:
+  build:
+    name: Trigger Code Checkout
     runs-on: ubuntu-latest
     steps:
-      - name: checkout-meu-step 
-        uses: actions/checkout@v1
-      - name: comandim pus falado
-        run: |
-          pwd
-          ls -a
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
-          echo "${{github.token}}"
-#          git clone git@github:GITHUB_REPOSITORY
-#          git checkout $GITHUB_SHA
-      - name: Simple JS ACtion
-        uses: actions/hello-world-javascript-action@v1.1
-        with:
-          who-to-greet: Jordan 
-        id: greet
-      - name: Log greeting time
-        run: echo "${{steps.greet.outputs.time}}"
+      - uses: actions/checkout@v3
