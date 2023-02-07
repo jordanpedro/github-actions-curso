@@ -1,7 +1,6 @@
 name: Ãctions workflows
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  repository_dispatch:
   pull_request:
     types: [opened]   
 jobs:
