@@ -2,7 +2,7 @@ name: Ãctions workflows
 on:
   push:
     paths:
-      - **.txt
+      - '**.txt'
 jobs: 
   run-githubaction:
     runs-on: ubuntu-latest
