@@ -1,5 +1,6 @@
 name: Shell Commands
-on: [push]
+on: 
+  workflow_dispatch:    
 jobs:
   meu-job:
     runs-on: ubuntu-latest
