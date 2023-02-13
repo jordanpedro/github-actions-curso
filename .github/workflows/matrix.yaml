@@ -7,7 +7,7 @@ jobs:
         node_v: [6,8,10]
         include: 
           - node_v: 10
-            is_node_10: "true"
+            is_node_10: "salve "
         exclude: 
           - node_v: 8
       fail-fast: true      
