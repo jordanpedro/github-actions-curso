@@ -18,8 +18,10 @@ jobs:
         with:
           node-version: ${{ matrix.node_v }}
       - name: Log node node-version
+        env: 
+          nodev: ${{ matrix.is_node_10 }}
         run: 
           node -v
-          echo $is_node_10
+          echo $nodev
           
         
