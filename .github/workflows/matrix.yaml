@@ -5,6 +5,11 @@ jobs:
     strategy:
       matrix:
         node_v: [6,8,10]
+        include: 
+          - node_v: 10
+            is_node_10: "true"
+        exclude: 
+          - node_v: 8
       fail-fast: true      
       max-parallel: 3
     runs-on: ubuntu-latest
@@ -13,4 +18,8 @@ jobs:
         with:
           node-version: ${{ matrix.node_v }}
       - name: Log node node-version
-        run: node -v
+        run: 
+          node -v
+          echo $is_node_10
+          
+        
