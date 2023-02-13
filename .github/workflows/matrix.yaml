@@ -13,13 +13,13 @@ jobs:
       fail-fast: true      
       max-parallel: 3
     runs-on: ubuntu-latest
+    env: 
+      nodev: ${{ matrix.is_node_10 }}    
     steps:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node_v }}
-      - name: Log node node-version
-        env: 
-          nodev: ${{ matrix.is_node_10 }}
+      - name: Log node node-version        
         run: 
           node -v
           echo $nodev
