@@ -5,6 +5,7 @@ jobs:
     strategy:
       matrix:
         node_v: [6,8,10]
+        node_v1: [1,2,3,4,5]
       fail-fast: true      
       max-parallel: 3
     runs-on: ubuntu-latest
