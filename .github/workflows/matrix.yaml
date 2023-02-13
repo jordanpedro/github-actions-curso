@@ -14,7 +14,7 @@ jobs:
       max-parallel: 3
     runs-on: ubuntu-latest
     env: 
-      nodev: "true" 
+      nodev1: "true" 
     steps:
       - uses: actions/setup-node@v1
         with:
@@ -22,6 +22,6 @@ jobs:
       - name: Log node node-version        
         run: 
           node -v
-          echo $nodev
+          echo $nodev1
           
         
