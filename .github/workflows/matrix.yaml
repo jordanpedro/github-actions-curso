@@ -14,7 +14,7 @@ jobs:
       max-parallel: 3
     runs-on: ubuntu-latest
     env: 
-      nodev1: "Jordan" 
+      nodev: ${{ matrix.is_node_10 }}    
     steps:
       - uses: actions/setup-node@v1
         with:
@@ -22,6 +22,6 @@ jobs:
       - name: Log node node-version        
         run: 
           node -v
-          echo $nodev1
+          echo ${nodev}
           
         
