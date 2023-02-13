@@ -21,7 +21,8 @@ jobs:
           node-version: ${{ matrix.node_v }}
       - name: Log node node-version        
         run: 
-          node -v
           echo ${nodev}
+          node -v
+          
           
         
