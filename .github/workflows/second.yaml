@@ -1,8 +1,6 @@
 name: Ãctions workflows
 on:
-  push:
-    paths:
-      - '**.txt'
+  workflow_dispatch:   
 jobs: 
   run-githubaction:
     runs-on: ubuntu-latest
