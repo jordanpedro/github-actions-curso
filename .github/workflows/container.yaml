@@ -36,6 +36,8 @@ jobs:
           "curl -X POST 'http://localhost:3001/api/user' --header 'Content-Type: application/json' --data-raw '{    \"username\" :\"jordan\",    \"address\": \"meuendereco\"}'"
       - name: get user    
         run: curl http://localhost:3001/api/users
+      - name: get googlw
+        run: curl http://www.google.com.br        
           
           
         
