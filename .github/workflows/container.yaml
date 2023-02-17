@@ -21,7 +21,9 @@ jobs:
           args: -v
       - uses: actions/checkout@v1         
       - name: listar files
-        run: ls -a
+        run: |
+          ls -a
+          chmod +x ./run.sh
       - name: run scripts sh
         uses: docker://node:12.14.1-alpine3.10
         with: 
