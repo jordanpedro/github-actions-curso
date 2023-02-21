@@ -3,6 +3,8 @@ on: push
 jobs: 
   docker-steps:
     runs-on: ubuntu-latest
+    container: 
+      image: node:10.18.0-jessie
     steps:
       - name: post user
         run: 
